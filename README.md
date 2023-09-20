@@ -1,8 +1,9 @@
 # ITP4507
 My homework on Contemporary Topics in Software Engineering  
 ## TO-DO List
-- [X]  Lab01 Part1  
-- [ ]  Lab01 Part2  
+- [ ]  Lab01
+> - [X] Part 01
+> - [ ] Part 02 
 - [ ]  Lab02
 - [ ]  Lab03
 - [ ]  Lab04
