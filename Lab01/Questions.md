@@ -2,14 +2,14 @@
 **Laboratory Exercise 1 – Basic Techniques for Embracing Changes in Object Oriented Software Design**  
 ## Q01
 ![image](https://github.com/worldetude/ITP4507/assets/85270523/b73f1f13-dd59-486c-87a7-0b926c3b9e5f)  
-- [ ] i)	Write Java programs to implement the classes shown in Figure 1.  Each class should be declared as public class and put in a separate Java source file.   
-- [ ] ii)	Write a driver class (Main.java) to create a Client object and call the doAction() method of the Client class.  Run the Main class to test the implementation of the classes shown in Figure 1.  
-- [ ] iii)	Modify a statement in Client.java so as to call the doService() method of the Server2 class.  Test your program after the change.  
+  i)	Write Java programs to implement the classes shown in Figure 1.  Each class should be declared as public class and put in a separate Java source file.   
+  ii)	Write a driver class (Main.java) to create a Client object and call the doAction() method of the Client class.  Run the Main class to test the implementation of the classes shown in Figure 1.  
+  iii)	Modify a statement in Client.java so as to call the doService() method of the Server2 class.  Test your program after the change.  
 ## Q02  
 ![image](https://github.com/worldetude/ITP4507/assets/85270523/cdf65806-a3f9-411d-9ee4-81b64f317674)  
-- [ ] i)	Write Java programs to implement the classes/interface shown in Figure 2.  Each class/interface should be declared as public and put in a separate Java source file.  
-- [ ] ii)	Write a driver class (Main.java) to create a Client object and call the doAction() method of the Client class.  Run the Main class to test the implementation of the classes shown in Figure 2.  
-- [ ] iii)	Modify a statement in Client.java so as to call the doService() method of the Server2 class.  Test your program after the change.  
+  i)	Write Java programs to implement the classes/interface shown in Figure 2.  Each class/interface should be declared as public and put in a separate Java source file.  
+  ii)	Write a driver class (Main.java) to create a Client object and call the doAction() method of the Client class.  Run the Main class to test the implementation of the classes shown in Figure 2.  
+  iii)	Modify a statement in Client.java so as to call the doService() method of the Server2 class.  Test your program after the change.  
 
 ## Q03  
 A junior programmer developed the following Java program.  
@@ -59,12 +59,12 @@ You are asked to re-design the program so that the program can handle the debugg
 
 
 **Part A - re-designing the program using a method in the same class which uses the method**  
-- [ ] i)	Identify program codes which may change and separate them from the remaining program.  
-- [ ] ii)	Declare a method called log(String message) for handling the debugging messages in the Cal class and revise the codes in the program to use the method to display debugging messages.  Test the revised program.  
-- [ ] iii)	Now, you are going to change the implementation of the method log for handling the debugging message by over-riding the method in a subclass of Cal.  Perform the following steps:  
-  > - [ ] •	Declare a class called Cal2 which is a subclass of the Cal and declare the log(String message) method which writes the debugging message in a text file called log.txt  
-  > - [ ] •	You also need to declare the variables in Cal2 and create the necessary object(s) for text file handling in the constructor of Cal2.  
-  > - [ ] •	Test Cal2 by creating an object of Cal2 in the Main class.
+  i)	Identify program codes which may change and separate them from the remaining program.  
+  ii)	Declare a method called log(String message) for handling the debugging messages in the Cal class and revise the codes in the program to use the method to display debugging messages.  Test the revised program.  
+  iii)	Now, you are going to change the implementation of the method log for handling the debugging message by over-riding the method in a subclass of Cal.  Perform the following steps:  
+  >   •	Declare a class called Cal2 which is a subclass of the Cal and declare the log(String message) method which writes the debugging message in a text file called log.txt  
+  >   •	You also need to declare the variables in Cal2 and create the necessary object(s) for text file handling in the constructor of Cal2.  
+  >   •	Test Cal2 by creating an object of Cal2 in the Main class.
   >> *Hint: the following is a sample program to write a text file.*  
   >> ``` java  
   >> import java.io.*;
@@ -90,17 +90,17 @@ You are asked to re-design the program so that the program can handle the debugg
   >>  
   >> ```
 
-- [ ] iv)	Draw a class diagram to show the relationships between the Main, Cal, and Cal2 classes.  Show all methods in the class diagram.  
+  iv)	Draw a class diagram to show the relationships between the Main, Cal, and Cal2 classes.  Show all methods in the class diagram.  
 
 **Part B – re-designing the program using method in a separate class**  
-- [ ] i)	Declare a public interface called Debug with an abstract public method called log(String message)   
-- [ ] ii)	Declare a public class called DebugToScreen which implements the Debug interface.  Declare a method call log(String message) for displaying the debugging messages.  
-- [ ] iii)	Revised the codes in the Cal class for using the DebugToScreen class to handle the debugging messages.  Test the revised program.  
-- [ ] iv)	Now, you are going to provide another implementation of the method log for handling the debugging message.  Perform the following steps:  
-  > - [ ] •	Declare a class called DebugToTextFile which implements the Debug interface and declare the log(String message) method which writes the debugging message in a text file called log.txt     
-  > - [ ] •	Test DebugToTextFile by creating an object of DebugToTextFile in the Cal class.
+  i)	Declare a public interface called Debug with an abstract public method called log(String message)   
+  ii)	Declare a public class called DebugToScreen which implements the Debug interface.  Declare a method call log(String message) for displaying the debugging messages.  
+  iii)	Revised the codes in the Cal class for using the DebugToScreen class to handle the debugging messages.  Test the revised program.  
+  iv)	Now, you are going to provide another implementation of the method log for handling the debugging message.  Perform the following steps:  
+  >   •	Declare a class called DebugToTextFile which implements the Debug interface and declare the log(String message) method which writes the debugging message in a text file called log.txt     
+  >   •	Test DebugToTextFile by creating an object of DebugToTextFile in the Cal class.
 
-- [ ] v)	Draw a class diagram to show the relationships between the Main, Cal, and Debug. DebugToScreen, and DebugToTextFile.  Show all methods in the class diagram.   
+  v)	Draw a class diagram to show the relationships between the Main, Cal, and Debug. DebugToScreen, and DebugToTextFile.  Show all methods in the class diagram.   
 
 **Part C – Comparison of the Design of Part A and Part B**   
-- [ ] i)	Compare the design in Part A and Part B.  Explain which design is better in terms of expendability and ease of maintenance of the program.
+  i)	Compare the design in Part A and Part B.  Explain which design is better in terms of expendability and ease of maintenance of the program.
